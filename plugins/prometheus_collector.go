@@ -10,7 +10,7 @@ import (
 var promAttempts = prometheus.NewCounterVec(
 	prometheus.CounterOpts{
 		Name: "hystrix_attempts_total",
-		Help: "Hytric attemps",
+		Help: "Hytrix attemps",
 	},
 	[]string{"circuit_name"},
 )
@@ -18,7 +18,7 @@ var promAttempts = prometheus.NewCounterVec(
 var promErrors = prometheus.NewCounterVec(
 	prometheus.CounterOpts{
 		Name: "hystrix_error_total",
-		Help: "Hytric errors",
+		Help: "Hytrix errors",
 	},
 	[]string{"circuit_name"},
 )
@@ -26,7 +26,7 @@ var promErrors = prometheus.NewCounterVec(
 var promFailures = prometheus.NewCounterVec(
 	prometheus.CounterOpts{
 		Name: "hystrix_failure_total",
-		Help: "Hytric failures",
+		Help: "Hytrix failures",
 	},
 	[]string{"circuit_name"},
 )
@@ -34,7 +34,7 @@ var promFailures = prometheus.NewCounterVec(
 var promRejects = prometheus.NewCounterVec(
 	prometheus.CounterOpts{
 		Name: "hystrix_rejects_total",
-		Help: "Hytric rejects",
+		Help: "Hytrix rejects",
 	},
 	[]string{"circuit_name"},
 )
@@ -42,7 +42,7 @@ var promRejects = prometheus.NewCounterVec(
 var promShortCircuits = prometheus.NewCounterVec(
 	prometheus.CounterOpts{
 		Name: "hystrix_short_circuits_total",
-		Help: "Hytric short circuits",
+		Help: "Hytrix short circuits",
 	},
 	[]string{"circuit_name"},
 )
@@ -50,7 +50,7 @@ var promShortCircuits = prometheus.NewCounterVec(
 var promTimeouts = prometheus.NewCounterVec(
 	prometheus.CounterOpts{
 		Name: "hystrix_timeouts_total",
-		Help: "Hytric timeouts",
+		Help: "Hytrix timeouts",
 	},
 	[]string{"circuit_name"},
 )
@@ -58,7 +58,7 @@ var promTimeouts = prometheus.NewCounterVec(
 var promFallbackSuccesses = prometheus.NewCounterVec(
 	prometheus.CounterOpts{
 		Name: "hystrix_fallback_success_total",
-		Help: "Hytric fallback successes",
+		Help: "Hytrix fallback successes",
 	},
 	[]string{"circuit_name"},
 )
@@ -66,7 +66,7 @@ var promFallbackSuccesses = prometheus.NewCounterVec(
 var promFallbackFailures = prometheus.NewCounterVec(
 	prometheus.CounterOpts{
 		Name: "hystrix_fallback_failures_total",
-		Help: "Hytric fallback failures",
+		Help: "Hytrix fallback failures",
 	},
 	[]string{"circuit_name"},
 )
@@ -74,7 +74,7 @@ var promFallbackFailures = prometheus.NewCounterVec(
 var promSuccesses = prometheus.NewCounterVec(
 	prometheus.CounterOpts{
 		Name: "hystrix_success_total",
-		Help: "Hytric success",
+		Help: "Hytrix success",
 	},
 	[]string{"circuit_name"},
 )
